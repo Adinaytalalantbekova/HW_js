@@ -1,0 +1,79 @@
+/*ПЕРВЫЙ ВАРИАНТ*/
+
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*body {*/
+/*    background-color: rgb( 105, 179, 179);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    margin: 0;*/
+/*    min-height: 100vh;*/
+/*}*/
+
+/*.container {*/
+/*    background-color: #2c3e50;*/
+/*    height: 200px;*/
+/*    width: 70px;*/
+/*    border-radius: 50px;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 15px 0;*/
+/*    flex-direction: column;*/
+/*}*/
+
+
+/*.circle {*/
+/*    background-color: rgba(0,0,0, 0.3);*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    border-radius: 50%;*/
+/*}*/
+/*.circle.red {*/
+/*    background-color: brown;*/
+/*    box-shadow: 0 0 25px;*/
+/*}.circle.yellow {*/
+/*    background-color: #efb100;*/
+/*    box-shadow: 0 0 25px;*/
+/*}.circle.green {*/
+/*    background-color: #44d205;*/
+/*    box-shadow: 0 0 25px;*/
+/*}*/
+
+/*ВТОРОЙ ВАРИАНТ*/
+body {
+  font-family: sans-serif;
+}
+#controlPanel {
+  float: left;
+  padding-top: 30px;
+}
+.button {
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 90px 40px;
+  cursor: pointer;
+}
+#traffic-light {
+  height: 550px;
+  width: 200px;
+  float: left;
+  background-color: #333;
+  border-radius: 40px;
+  margin: 30px 0;
+  padding: 20px;
+}
+.bulb {
+  height: 150px;
+  width: 150px;
+  background-color: #111;
+  border-radius: 50%;
+  margin: 25px auto;
+  transition: background 500ms;
+}
+
