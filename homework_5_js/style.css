@@ -1,53 +1,95 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    background: #4B0082;
+    box-sizing: border-box;
+    width: 100%;
 }
-
-.container{
+.container {
+    margin: 0 auto;
+    width: 1000px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.form{
-    width: 500px;
-    border: 2px solid #fff;
-    padding: 10px;
+
+h1 {
+    font-family: cursive;
+    font-size: 70px;
+    color: #6500ff;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
+.mainBlock {
+    width: 50em;
+    background-color: rgb(877, 83, 8);
+    margin-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    opacity: 0.9;
+    box-shadow: 0 0 30px yellow;
+    border-radius: 50px;
 }
 
-.header input {
-    width: 80%;
+
+.mainBlock div {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column-gap: 5px;
+}
+
+.textIn {
+    height: 2em;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+#addBtn{
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-family: cursive;
+}
+
+#addBtn:hover{
+    background-color: rgb(84, 680, 94);
+    color: deeppink;
+}
+
+input[type='date']{
+    font-family: cursive;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li{
+    display: grid;
+    grid-template-columns: 10fr 1fr 1fr ;
+    margin-top: 10px;
+}
+
+.deleteBtn{
+    width: 80px;
     height: 30px;
-    font-size: 18px;
-}
-.header button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.actions button {
-    width: 150px;
-    height: 30px;
-    font-size: 18px;
-    border: 2px solid #fff;
-    text-align:center ;
+    background-color: white;
+    border: none;
+    font-family: cursive;
 
 }
-.todoBlock p{
-    color: #ffffff;
-    font-size: 18px;
-}
-.Change {
-    background: darkgoldenrod;
-    color: #ffffff;
+.deleteBtn:hover{
+    background-color: rgb(80, 7, 45);
+    color: white;
 }
 
-.Delete {
-    background: darkred;
-    color: #ffffff;
+.taskDone{
+    text-decoration: none;
+}
+
+.done{
+    text-decoration: line-through;
 }
